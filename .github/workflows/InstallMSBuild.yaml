@@ -11,3 +11,11 @@ jobs:
         uses: microsoft/setup-msbuild@v1.0.1
       - name: Check MSBuild
         run: MSBuild /help
+      - name: Pull Code
+        uses: actions/checkout@v2
+      - name: Restore
+        run: nuget restore LottoApp.sln
+      - name: Build
+        run: msbuild LottoApp.sln
+      - name: CheckBuild
+        run: ls LottoApp/ -R
