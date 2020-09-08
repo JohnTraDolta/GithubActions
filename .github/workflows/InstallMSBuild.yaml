@@ -16,4 +16,4 @@ jobs:
       - name: Restore
         run: nuget restore GenericMobileApp/GenericMobileApp.sln
       - name: Build
-        run: msbuild GenericMobileApp.sln
+        run: msbuild GenericMobileApp/GenericMobileApp.sln
