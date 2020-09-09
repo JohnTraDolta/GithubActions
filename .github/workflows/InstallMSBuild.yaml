@@ -1,4 +1,4 @@
-name: Install MSBuild Windows
+name: Android Build
 
 on: push
 
